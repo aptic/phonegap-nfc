@@ -17,9 +17,6 @@ Supported Platforms
 * Android
 * [iOS 11](#ios-notes)
 * Windows (includes Windows Phone 8.1, Windows 8.1, Windows 10)
-* BlackBerry 10
-* Windows Phone 8
-* BlackBerry 7
 
 ## Contents
 
@@ -30,7 +27,6 @@ Supported Platforms
   - [NdefRecord](#ndefrecord)
 * [Events](#events)
 * [Platform Differences](#platform-differences)
-* [BlackBerry 10 Invoke Target](#blackberry-10-invoke-target)
 * [Launching Application when Scanning a Tag](#launching-your-android-application-when-scanning-a-tag)
 * [Testing](#testing)
 * [Sample Projects](#sample-projects)
@@ -56,9 +52,7 @@ Edit config.xml to install the plugin for [PhoneGap Build](http://build.phonegap
     <plugin name="phonegap-nfc" source="npm" />
 
 
-Windows Phone 8.1 should use the **windows** platform. The Silverlight based Windows Phone 8 code is no longer being maintained.
 
-BlackBerry 7 support is only available for Cordova 2.x. For applications targeting BlackBerry 7, you may need to use an older version of phonegap-nfc.
 
 See [Getting Started](https://github.com/chariotsolutions/phonegap-nfc/blob/master/doc/GettingStartedCLI.md) and [Getting Started BlackBerry 10](https://github.com/chariotsolutions/phonegap-nfc/blob/master/doc/GettingStartedBlackberry10.md)for more details.
 
@@ -138,9 +132,6 @@ On iOS you must call [beingSession](#nfcbeginsession) before scanning a tag.
 - Android
 - iOS
 - Windows
-- BlackBerry 7
-- BlackBerry 10
-- Windows Phone 8
 
 ## nfc.removeNdefListener
 
@@ -258,7 +249,6 @@ Removing listeners is not recommended. Instead, consider that your callback can 
 ### Supported Platforms
 
 - Android
-- BlackBerry 7
 
 ## nfc.addNdefFormatableListener
 
