@@ -126,7 +126,7 @@
         if (self.shouldUseTagReaderSession) {
             NSLog(@"Using NFCTagReaderSession");
 
-            self.nfcSession = [[NFCTagReaderSession alloc] initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
+      self.nfcSession = [[NFCTagReaderSession alloc] initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
                                                             delegate: self
                                                             queue: dispatch_get_main_queue()];
         } else {
